@@ -33,7 +33,7 @@ inline void naive(int to) {
 }
 
 inline bool isPrime(int number) {
-    for (int d = 2; d < number; d++)
+    for (int d = 2; d <= number / 2; d++)
         if (number % d == 0)
             return false;
     return true;
